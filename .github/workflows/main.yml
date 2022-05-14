@@ -23,7 +23,7 @@ jobs:
       - name: Run eslint
         run: yarn lint
       - name: Run Jest
-        run: yarn jest
+        run: npm test
       - name: Upload test coverage artifact
         uses: actions/upload-artifact@v1
         with:
@@ -33,4 +33,4 @@ jobs:
         uses: ziishaned/jest-reporter-action@v0.0.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-command: "yarn jest --coverage"
+          test-command: "npm test"
