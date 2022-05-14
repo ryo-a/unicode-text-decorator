@@ -1,17 +1,17 @@
-# アクション名
 name: CI
 
-# タイミングを指定
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
     name: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
       - name: yarn install
         run: yarn install
       - name: eslint review
