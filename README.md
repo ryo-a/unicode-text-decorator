@@ -8,7 +8,7 @@ unicode-text-decorator is a simple library to convert ASCII text to decorated te
 
 ## Notice
 
-
+These Unicode characters are basically symbols provided for expressing mathematical formulae and so on. Hence they are not recongnised as Latin alphabet characters and have accessibility problems like text-to-speech. Not only this library but also these "decorated Unicode fonts" are just for hobby and playing use.
 
 ## Install
 
@@ -67,6 +67,13 @@ FYI: *[wi(l)d-screen baroque](https://music.apple.com/jp/album/wi-l-d-screen-bar
 | square                 | 🅄🄽🄸🄲🄾🄳🄴        | ✅               |               |         |
 | parenthesized          | 🄤⒩⒤⒞⒪⒟⒠        | ✅               | ✅             |         |
 | fullwidth              | Ｕｎｉｃｏｄｅ | ✅               | ✅             | ✅       |
+
+#### Notice
+
+regional_indicator is the characters that represents [national/regional flags](https://en.wikipedia.org/wiki/Regional_indicator_symbol). In some environment (like Discord), these characters are basically interpreted as flags emoji. For example, `JOIN US` will be shown as **JO (Jordan) IN (India) US (United States)** like below. This is not a bug of this library.
+
+![national flags](./docs/national_flags.png)
+
 
 ### Fallback Option
 
