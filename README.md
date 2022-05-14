@@ -1,5 +1,7 @@
 # unicode-text-decorator
 
+[![Node.js CI](https://github.com/ryo-a/unicode-text-decorator/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/ryo-a/unicode-text-decorator/actions/workflows/node.js.yml)
+
 unicode-text-decorator is a simple library to convert ASCII text to decorated text.
 
 ```
